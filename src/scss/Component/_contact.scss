@@ -1,0 +1,56 @@
+#contact {
+  text-align: center;
+
+  font-family: $font-basic;
+  font-size: 1.25rem;
+  color: $color-grey-dark;
+}
+
+.contact-title {
+  font-size: 3rem;
+  color: $color-title;
+}
+
+.contact-eng {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.contact-envelop {
+  margin-top: 4rem;
+  width: 10rem;
+  fill: $color-title;
+
+  &:hover {
+    fill: rgba(#aa5656, 0.4);
+  }
+}
+
+.contact-address {
+  font-size: 1.5rem;
+  margin: 4rem 0;
+
+  input {
+    color: #aa5656;
+    font-size: 1.75rem;
+    border: none;
+    outline: none;
+  }
+
+  button {
+    font-size: 1.25rem;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+
+    display: block;
+    margin: 1rem auto;
+
+    cursor: pointer;
+  }
+}
+
+.contact-causion {
+  margin-top: 2rem;
+  font-size: 1rem;
+}

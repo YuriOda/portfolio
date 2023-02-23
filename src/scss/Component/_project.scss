@@ -1,0 +1,93 @@
+#project {
+  border-left: 1px solid $color-title;
+  margin-top: 10rem;
+
+  font-family: $font-basic;
+  font-size: 1.25rem;
+}
+
+//PJ item
+.pj {
+  &-img {
+    width: 40rem;
+    border-radius: 1rem;
+    margin: 0 2rem;
+  }
+
+  &-text {
+    padding: 1rem;
+    width: 40rem;
+    margin: 0 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-subtitle {
+    color: $color-grey-dark;
+  }
+
+  &-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+
+  &-explain {
+    margin: 1.5rem 0;
+
+    span {
+      display: block;
+    }
+  }
+
+  &-button {
+    font-family: inherit;
+    border-radius: 1rem;
+    border: 1px solid $color-grey-dark;
+    width: 10rem;
+    margin: 2rem 0;
+    padding: 0.5rem 1rem;
+
+    background-color: inherit;
+
+    &:hover {
+      background-color: $color-secondary;
+      color: white;
+    }
+  }
+}
+//Yomulog
+.yomulog-container {
+  position: relative;
+  top: -20rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+//todo
+.todo-container {
+  position: relative;
+  top: -10rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.todo-text {
+  text-align: right;
+}
+
+.todo-button {
+  position: relative;
+  right: -28rem;
+}
+
+.view-detail {
+  text-decoration: none;
+  color: inherit;
+}

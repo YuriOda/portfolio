@@ -1,0 +1,12 @@
+.section-title {
+  color: $color-title;
+  font-size: 7rem;
+  font-family: $font-title;
+  letter-spacing: 3px;
+
+  position: relative;
+  left: -7.5rem;
+
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}

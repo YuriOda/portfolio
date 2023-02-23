@@ -1,0 +1,118 @@
+#about {
+  margin-top: 15rem;
+  //padding-top: 10rem;
+  border-left: 1px solid $color-title;
+
+  font-size: 1.25rem;
+  font-family: $font-basic;
+}
+
+.about {
+  &-summary {
+    position: relative;
+    top: -17.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    align-items: center;
+  }
+
+  &-img {
+    width: 20rem;
+    border-radius: 1rem;
+    margin-right: 2rem;
+  }
+
+  &-skills {
+    padding: 1.5rem;
+    width: 47.5rem;
+  }
+
+  &-skill {
+    &-row {
+      display: flex;
+      margin: 1rem 0;
+    }
+
+    &-title {
+      display: inline-block;
+      width: 6rem;
+      background-color: white;
+      border-right: 1px solid $color-title;
+      padding-top: 3.25rem;
+    }
+
+    &-table {
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    &-td {
+      width: 5rem;
+
+      height: 2rem;
+      text-align: center;
+
+      @include respond(phone) {
+        width: 4.5rem;
+        font-size: 1.25rem;
+      }
+    }
+
+    &-icon {
+      font-size: 3.5rem;
+
+      @include respond(phone) {
+        font-size: 2.75rem;
+      }
+    }
+  }
+
+  &-skill-language {
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-title {
+      height: 3.4rem;
+      display: inline-block;
+      width: 7.5rem;
+    }
+
+    &-toeic {
+      display: inline-block;
+      background-color: $color-title;
+      width: 12rem;
+      padding: 0.25rem 0;
+      border-radius: 0.5rem;
+      padding-left: 0.5rem;
+    }
+
+    &-jpn {
+      display: inline-block;
+      background-color: $color-title;
+      width: 16rem;
+      padding: 0.25rem 0;
+      border-radius: 0.5rem;
+      padding-left: 0.5rem;
+    }
+  }
+
+  &-intro {
+    position: relative;
+    top: -13rem;
+    width: 70vw;
+    max-width: 70rem;
+    margin: 0 auto;
+    color: $color-grey-dark;
+    padding: 1rem;
+
+    line-height: 1.75;
+  }
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
+}
