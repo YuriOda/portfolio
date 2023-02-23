@@ -1,11 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 //pages
 import RootLayout from "./Page/RootLayout";
 import Home from "./Page/Home";
 import PJToDo from "./Page/PJToDo";
 import PJYomuLog from "./Page/PJYomuLog";
-
 //style
 import "./App.css";
 
