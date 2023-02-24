@@ -1,8 +1,16 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import YomulogImg from "../assets/yomu-log.png";
 import TodoLight from "../assets/todo-light.png";
 
 const Project = () => {
+  const navigate = useNavigate();
+  const navigateToYomuLog = () => {
+    navigate("/project/yomu-log");
+  };
+  const navigateTodoHandler = () => {
+    navigate("/project/todo");
+  };
+
   return (
     <section id="project">
       <h3 className="section-title">Project</h3>
@@ -23,10 +31,8 @@ const Project = () => {
             React, Router, Google Books API, Firebase (RealtimeDB, Auth), Sass
           </p>
 
-          <button className="pj-button">
-            <Link to="/project/yomu-log" className="view-detail">
-              View Detail
-            </Link>
+          <button className="pj-button" onClick={navigateToYomuLog}>
+            View Detail
           </button>
         </div>
       </div>
@@ -41,10 +47,12 @@ const Project = () => {
             <span>ダークモード・モバイル対応</span>
           </p>
           <p>React, Context, Firebase (RealtimeDB)</p>
-          <button className="pj-button todo-button">
-            <Link to="/project/todo" className="view-detail">
-              View Detail
-            </Link>
+
+          <button
+            className="pj-button pj-button-todo"
+            onClick={navigateTodoHandler}
+          >
+            View Detail
           </button>
         </div>
         <Link to="/project/todo" className="view-detail">
