@@ -59,6 +59,24 @@ const Project = () => {
           <img src={TodoLight} alt="To Do App Screenshot" className="pj-img" />
         </Link>
       </div>
+
+      {/* COMING SOON */}
+      <div className="comingsoon-container">
+        <div className="comingsoon-img"></div>
+        <div className="pj-text comingsoon-text">
+          <p className="pj-title">Working on ...</p>
+          <p>
+            Team Project from{" "}
+            <a
+              href="https://www.chingu.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Chingu
+            </a>
+          </p>
+        </div>
+      </div>
     </section>
   );
 };

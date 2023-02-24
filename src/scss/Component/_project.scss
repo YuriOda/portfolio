@@ -83,6 +83,39 @@
   justify-content: center;
 }
 
+//comingsoon
+.comingsoon {
+  &-container {
+    position: relative;
+    top: -5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &-img {
+    background-color: $color-title;
+    width: 40rem;
+    height: 25rem;
+    border-radius: 1rem;
+    padding: 6rem 0 0 2rem;
+    margin-right: 2rem;
+  }
+
+  &-text {
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+
+    a {
+      color: $color-primary;
+    }
+
+    a:hover {
+      color: $color-secondary;
+    }
+  }
+}
+
 .todo-text {
   text-align: right;
 }
