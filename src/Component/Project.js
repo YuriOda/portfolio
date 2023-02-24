@@ -37,8 +37,8 @@ const Project = () => {
           <span className="pj-subtitle">Simple & Easy to Use</span>
           <p className="pj-title">To Do App</p>
           <p className="pj-explain">
-            <span>本棚をデジタル化</span>
-            <span>読書の途中にポストする感想文</span>
+            <span>ドラッグで順番変更可能なToDoList</span>
+            <span>ダークモード・モバイル対応</span>
           </p>
           <p>React, Context, Firebase (RealtimeDB)</p>
           <button className="pj-button todo-button">
