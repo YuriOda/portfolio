@@ -3,11 +3,12 @@ import { FaGlobe, FaGithub, FaSass, FaReact, FaFigma } from "react-icons/fa";
 import { SiFirebase } from "react-icons/si";
 
 import Footer from "../Component/Footer";
-import ScreenShotLight from "../assets/todo-light.png";
-import ScreenShotDark from "../assets/todo-dark.png";
 import ScreenShotMobileLight from "../assets/todo-mobile-light.png";
 import ScreenShotMobileDark from "../assets/todo-mobile-dark.png";
 import Gif from "../assets/todo-gif.gif";
+
+// import ScreenShotLight from "../assets/todo-light.png";
+// import ScreenShotDark from "../assets/todo-dark.png";
 
 const PJToDo = () => {
   window.scrollTo(0, 0);
@@ -27,39 +28,52 @@ const PJToDo = () => {
           </span>
         </div>
 
-        <h3 className="section-title">To Do List</h3>
+        <h3 className="project-title">To Do List</h3>
 
         {/* DETAILS */}
         <div className="pjd">
           <div className="pjd-view">
-            <p>
-              <span className="pjd-view-span">Code</span>
-              <span className="pjd-view-span">Live </span>
-            </p>
-
-            <a
-              href="https://github.com/YuriOda/to-do-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub className="pjd-icon" />
-            </a>
-            <a
-              href="https://todo-app-one-dusky.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGlobe className="pjd-icon" />
-            </a>
+            <div>
+              <a
+                href="https://github.com/YuriOda/to-do-app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className="pjd-icon" />
+              </a>
+              <a
+                href="https://todo-app-one-dusky.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGlobe className="pjd-icon" />
+              </a>
+            </div>
 
             {/* GIF */}
-            <img
-              src={Gif}
-              alt="To Do List Gif"
-              className="pjd-screenshot-gif"
-            />
 
             <div className="pjd-multi-div">
+              <img
+                src={Gif}
+                alt="To Do List Gif"
+                className="pjd-screenshot-gif"
+              />
+              <div className="todo-screenshot-container">
+                <img
+                  className="todo-mobile"
+                  src={ScreenShotMobileLight}
+                  alt="To Do List Screenshot mobile light theme"
+                />
+                <img
+                  className="todo-mobile todo-dark"
+                  src={ScreenShotMobileDark}
+                  alt="To Do List Screenshot mobile dark theme"
+                />
+              </div>
+            </div>
+
+            {/* Screenshot 4 ver */}
+            {/* <div className="pjd-multi-div">
               <div className="pjd-screenshot-row">
                 <img
                   className="pjd-screenshot-todo"
@@ -86,7 +100,7 @@ const PJToDo = () => {
                   alt="To Do List Screenshot mobile dark theme"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div>
@@ -118,13 +132,11 @@ const PJToDo = () => {
                   </tr>
                   <tr>
                     <td className="pjd-table-detail">
-                      <p>Router</p>
-                      <p>Redux</p>
+                      <p>Context</p>
                     </td>
                     <td className="pjd-table-detail">&nbsp;</td>
                     <td className="pjd-table-detail">
                       <p>Realtime DB</p>
-                      <p>Authentication</p>
                     </td>
                     <td className="pjd-table-detail">&nbsp;</td>
                   </tr>
@@ -138,140 +150,128 @@ const PJToDo = () => {
             </div>
           </div>
 
+          {/* CONCEPT */}
           <div>
             <div className="pjd-title-border">
-              <h2 className="pjd-title">Concept</h2>
+              <h2 className="pjd-title">Detail</h2>
             </div>
 
             <div className="pjd-textbox">
-              <p className="pjd-subtitle">コンセプト</p>
-              <ul className="pjd-list">
-                <li>
-                  <a
-                    href="https://developers.google.com/books/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Google Books API
-                  </a>{" "}
-                  を使用し、Yomu Log上に本棚を作成
-                </li>
-                <li>実物の本棚同様、一目で多くのタイトルが閲覧可能なUI</li>
-                <li>
-                  読書中に感じたことや、読み返したり、久しぶりに読んだ時などにも追加して読書感想文を育てます
-                </li>
-              </ul>
-
-              <p className="pjd-subtitle">このプロジェクトを作成した目的</p>
-              <ul className="pjd-list">
-                <li>APIを使用したプロジェクトの作成</li>
-                <li>Reduxの実践</li>
-                <li>Router v6.8を学びプロジェクトに取り入れる</li>
-                <li>
-                  <a
-                    href="https://firebase.google.com/docs/auth/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Authentication
-                  </a>
-                  機能を学ぶ
-                </li>
-              </ul>
+              <p>
+                　本プロジェクトは
+                <a
+                  href="https://www.frontendmentor.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Frontend Mentor
+                </a>
+                の課題のひとつです。Frontend
+                Mentorとは、個人開発のプロジェクト向けにデザインと機能を設計した課題を提供してくれるサービスで、指定された機能を自身で1から作成するものです。今回使用した課題は
+                <a
+                  href="https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  こちら
+                </a>
+              </p>
+              <p>
+                　まず課題ページよりプロジェクト概要と背景用の画像をダウンロードしました。フォントやdivのサイズなどは情報がないため、アプリのスクリーンショットをとりFigmaで同一のものを作ることでエレメントのサイズや色を詳細に確認し、Google
+                fontsから似たフォントを探しました。
+              </p>
+              <p>
+                <span className="code">create-react-app</span>
+                よりプロジェクトの作成を開始しました。
+              </p>
             </div>
           </div>
 
           <div>
             <div className="pjd-title-border">
+              <h2 className="pjd-title">Object</h2>
+            </div>
+
+            <div className="pjd-textbox">
+              <ul className="pjd-list">
+                <li>
+                  <strong>Tutorial Hellからの脱出</strong>
+                  <p>
+                    学びを進めるほどにまだ知識が十分でないと感じてしまい、なかなかプロジェクトに着手できずにいました。そんな状況を打破したいと考えていたときにFrontend
+                    Mentorを見つけ、まずはToDoAppから作成することにしました。
+                  </p>
+                </li>
+                <li>
+                  <strong>React Contextの実践</strong>
+                  <p>
+                    state, context, redux, custom
+                    hookの4つの用途や違いがまだ不明瞭でした。useContextは頻繁なstate変更には向いていないものの、内容理解を優先しまずはReduxを使わずにアプリを作成することにしました。
+                  </p>
+                </li>
+                <li>
+                  <strong>async, await</strong>
+                  <p>
+                    fetchAPIを用いてGET, PUT,
+                    POSTすることは出来ていたのですが、まだ不明確だったため本アプリのデータ取得・書き換えにおいてはfethを用いて練習することにしました。
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div className="pjd-title-border">
               <h2 className="pjd-title">Struggles</h2>
             </div>
+            {/* STRUGGLES */}
             <div className="pjd-textbox">
-              {/* PREP */}
-              <p className="pjd-subtitle">プロジェクト準備</p>
-              <p className="pjd-struggles-p">
-                　APIは
-                <a
-                  href="https://openlibrary.org/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Open Library
-                </a>
-                と
-                <a
-                  href="https://developers.google.com/books/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Google Books APIs
-                </a>
-                の2つを検討しましたが、前者はやはり日本語書籍がヒットしなかったため後者を選定しました。
-              </p>
-              <p className="pjd-struggles-p">
-                　ツール選定後、Figmaでデザインを作成しました。実際にスマホを持つところをイメージし使いやすいようデザインしたつもりでしたが、実際に操作してみて使用し辛かったりわかりにくい箇所がいくつかあり、開発途中に都度修正を行いました。この想定と実際の操作のギャップを知ることができ良かったです。
-              </p>
-
-              <p className="pjd-struggles-notation">当初のFigmaデザイン</p>
-              {/* <img src={Design} alt="Figma" className="pjd-struggles-figma" /> */}
-
-              <p className="pjd-struggles-p">
-                本プロジェクトは
-                <span className="code">npx create-react-app</span>
-                から作成しました。最初に
-                <span className="code">react-redux</span>,{" "}
-                <span className="code">@reduxjs/toolkit</span>,{" "}
-                <span className="code">react-router-dom</span>
-                と、スタイリングのため<span className="code">
-                  node-sass
-                </span>, <span className="code">fontawesome</span>,{" "}
-                <span className="code">react-responsive</span>
-                をnpmでインストールしています。
-              </p>
-
-              {/* STRUGGLES */}
               <p className="pjd-subtitle">特に苦労した点</p>
 
-              <ol>
-                <li className="pjd-struggles-item">
-                  Google Books APIsの使用と、公式ドキュメント
-                  <br />
-                  本プロジェクトを作成するにあたり、自身で公式ドキュメントを読み込む練習をするため、youtubeなどにあるチュートリアル形式の解説は見ないことを決めました。当初はドキュメントにほとんど慣れていなかったため、わからない内容が盛りだくさんの文書に圧倒されていました。少しづつ調べながら、fetchAPIで検索結果を取得する方法をドキュメントから見つけ、データはmapで表示させています。
-                  <br />
-                  　記事を投稿する機能を実装するにあたり、このmapで表示させたAPIデータのなかから、クリックした本のid等をどう取得するかが難しかったです。最終的にはmapコードのなかであれば該当の書籍のデータが抽出できると考え、調べたところmap内にhandlerを入れることで解決しました。
-                </li>
-                <li className="pjd-struggles-item">
-                  Router v6.4とReduxの併用
-                  <br />
-                  　当初はreact-router-dom
-                  v5でルーティング設定を行う前提でreduxのreducerを記述していましたが、
-                  <a
-                    href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    使用していたオンラインコース
-                  </a>
-                  で新しくRouter
-                  v6.4の解説がリリースされたため、こちらも検討に含めることにしました。
-                  loaderを使用すれば下記2点のメリットがありそうでしたので、v6.4へ書き換えることにしました。
-                  <br />
-                  　①ページレンダー時にDBからfetchしたデータをuseEffectで global
-                  stateに登録する箇所を1箇所に集約可能 <br />
-                  　②そのコードをcomponent外（loader）に記述できるためcomponent内が整理される
-                  <br />
-                  　作業開始時はstateとloaderの役割が曖昧だったため、ページ内で使う全てのデータをloaderで取得したデータに置き換えてしまい、例えば本棚に書籍を追加した後もcomponentがリレンダーされない問題が発生しました。そのため、fetchはloader内で行い、ユーザーの操作が発生したときは内容をstateに登録することにしましたがこの使い分けに苦労しました。
-                  <br />
-                  　最終的にはRootLayoutで取得したloaderデータをstateに登録しましたが、loaderでデータ取得時にすでにproperty名等を設定したものをリターンしているため、そのままuseRouteLoaderDataをstateに登録できました。reduxのreducerがシンプルで完結になり、この点からもloaderを採用したメリットがありました。
-                </li>
-              </ol>
-
-              <p className="pjd-subtitle">今後の課題</p>
-              <p className="pjd-struggles-p">
-                　認証ページはlocalStorageのtoken有無のみに依存している中途半端な状態のため、実際にauth機能を使って認証する方法を開発中です
+              <p className="pjd-p-title">Drag & Drop機能</p>
+              <p>
+                　ドラッグ&ドロップ機能については初めて扱うため、まずは方法についてリサーチする必要がありました。
+                <a
+                  href="https://openbase.com/categories/js/best-react-drag-and-drop-libraries?vs=react-draggable%2Csortablejs%2Creact-beautiful-dnd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  いくつかの記事
+                </a>
+                を参考にライブラリを調べましたが、使いやすさと公式ドキュメント・チュートリアルが充実していることから
+                <span className="code">react-beautiful-dnd</span>
+                を選定しました。この機能を実装する上で難しかった点は、タスクの順番をどのように指定するかです。入力したタスクはfirebaseにfetchPOSTで送信していたのですが、このオブジェクト名は重複を避けるためにランダムに生成された特有の文字列であるため、
+                <a
+                  href="https://codesandbox.io/s/k260nyxq9v"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  こちら
+                </a>
+                のようにindex番号やobject名を使用してタスクの順番を指定することができませんでした。
               </p>
-              <p className="pjd-struggles-p">
-                　現在、各書籍のページURLはDynamic Routingを用いてGoogle Books
-                APIsのidに設定しており、App.jsで個別にpathを設定しなくてもよいようになっております。しかしこの本のページを直接更新するとエラーが発生してしまい、今後これが改善できるのか含めその方法を模索していきます。
+              <p>
+                　まず考えたのは、このオブジェクト名を毎回アレイで書き換えることで固有の文字列ではなく数字にしてしまう方法でした。しかしこれはそもそも固有の文字列を付与している意味がなくなることと、当然並び替え後にタスクを追加・削除すると同じindex番号が生まれてしまいエラーが発生することから別の方法をとることにしました。
+              </p>
+              <p>
+                　次に考えたのは、firebase上でタスクの順番を入れ替えるのではなく、firebase上にタスクIDだけをPOSTし、ページを読み込むときにこのIDの順番にタスクを並び替えて表示をさせることです。このアイディアは最終的に機能したのですが、次に下記の問題に直面しました。
+              </p>
+              <p className="pjd-p-title margin-top">FetchAPIとasync, await</p>
+              <p>
+                　並び替え機能を持たせるために上記の方法を採用することにしたのですが、ページレンダー時にfirebaseからタスクの表示順のデータを取得し、その後にその順番通りにタスクを表示させることが難しかったです。まず最初に
+                <span className="code">useEffect</span>
+                内に①タスクの順番を取得するfetch、②タスクの内容を取得&①の順番に表示させるfetchを順に並べたのですが、ロードのタイミングによっては②の情報取得が先に完了してしまい、思うようにタスクを表示できませんでした。dataを処理するfunctionをcomponent外に作ったり順番やクリーンさを見直したりしたのですがうまくいかず、useEffectのdependencyによるinfinite
+                loopに陥るなど苦戦しました。
+              </p>
+              <p>
+                　最終的には①を取得後に②を実行できるようasync, awaitの復習を行い
+                <span className="code">useEffect</span>
+                内に
+                <a
+                  href="https://github.com/YuriOda/to-do-app/blob/main/src/App.js"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  async functionをひとつ作る
+                </a>
+                (line23)ことで解決ができました。ただ今回App.js内にあるfunctionにはいくつか同じようなコードがあることと、内容が多すぎると感じるため今後はよりこういった点を改善することを念頭に学習を進めていきます。
               </p>
             </div>
           </div>

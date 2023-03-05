@@ -23,7 +23,7 @@ const PJYomuLog = () => {
           </span>
         </div>
 
-        <h3 className="section-title">Yomu Log</h3>
+        <h3 className="project-title">Yomu Log</h3>
 
         {/* DETAILS */}
         <div className="pjd">
@@ -237,7 +237,7 @@ const PJYomuLog = () => {
 
               <p className="pjd-subtitle">今後の課題</p>
               <p className="pjd-struggles-p">
-                　認証ページはlocalStorageのtoken有無のみに依存している中途半端な状態のため、実際にauth機能を使って認証する方法を開発中です
+                　認証ページはlocalStorageのtoken有無のみに依存している中途半端な状態のため、実際にauth機能を使って認証する方法で改善する予定です。
               </p>
               <p className="pjd-struggles-p">
                 　現在、各書籍のページURLはDynamic Routingを用いてGoogle Books

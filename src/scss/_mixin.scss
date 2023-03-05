@@ -42,3 +42,10 @@
   letter-spacing: 2px;
   cursor: pointer;
 }
+
+@mixin title {
+  color: $color-title;
+  font-size: 4.5rem;
+  font-family: $font-title;
+  letter-spacing: 3px;
+}

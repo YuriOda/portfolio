@@ -1,3 +1,26 @@
+//TYPOGRAPHY
+.project-title {
+  @include title();
+  text-align: center;
+}
+
+.code {
+  font-size: 1rem;
+  font-family: $font-code;
+  background-color: rgb(240, 238, 238);
+  padding: 0 0.5rem;
+  margin: 0 1px;
+  border-radius: 0.5rem;
+  //font-weight: 600;
+  letter-spacing: 2px;
+}
+
+//UTILITY
+.margin-top {
+  margin-top: 3rem;
+}
+
+//PJ DETAIL
 #yomulog {
   color: $color-grey-dark;
   font-family: $font-basic;
@@ -13,10 +36,10 @@
   }
 
   a {
-    color: $color-primary;
+    color: $color-red;
   }
   a:hover {
-    color: $color-secondary;
+    color: $color-primary;
   }
 }
 
@@ -26,29 +49,20 @@
   padding: 2.5rem;
 }
 
-.pj-back {
-  @include nav-title();
-}
-
 .pjd {
-  padding: 3rem 5rem;
+  padding: 0 5rem;
   position: relative;
-  top: -30rem;
 
   @include respond(tab-port) {
-    padding: 3rem 1rem;
+    padding: 0 1rem;
   }
 
   @include respond(phone) {
-    padding: 3rem 0.5rem;
+    padding: 0 0.5rem;
   }
 
   &-view {
     text-align: center;
-
-    &-span {
-      margin: 0 1.25rem;
-    }
   }
 
   &-screenshot {
@@ -61,21 +75,17 @@
   &-multi-div {
     display: flex;
     flex-wrap: wrap;
-    //background-color: yellow;
-
     text-align: center;
   }
 
   &-screenshot-row {
-    width: 38rem;
     height: 40rem;
     margin: 0 auto;
   }
 
   &-screenshot-gif {
-    display: block;
     border-radius: 1rem;
-    margin: 1rem auto;
+    margin: 3rem auto;
     width: 50rem;
     height: 30rem;
 
@@ -83,25 +93,6 @@
       width: 40rem;
       height: 24rem;
     }
-  }
-
-  &-screenshot-todo {
-    display: inline-block;
-    width: 35rem;
-    border-radius: 1rem;
-
-    margin: 1.5rem 1rem;
-  }
-
-  &-screenshot-todo-small {
-    display: inline-block;
-    width: 20rem;
-    border-radius: 1rem;
-    margin: 1.5rem 1rem;
-
-    position: relative;
-    top: -12.5rem;
-    right: -5rem;
   }
 
   &-icon {
@@ -171,7 +162,6 @@
   &-textbox {
     padding: 0 3rem;
     margin-bottom: 2.5rem;
-
     //background-color: yellow;
   }
 
@@ -184,6 +174,12 @@
     font-weight: bold;
     font-size: 1.75rem;
     color: rgba($color-grey-dark, 0.8);
+  }
+
+  &-p-title {
+    font-weight: bold;
+    color: $color-red;
+    font-size: 1.5rem;
   }
 
   &-struggles {
@@ -207,11 +203,27 @@
   }
 }
 
-.code {
-  font-family: $font-code;
-  background-color: rgb(240, 238, 238);
-  padding: 0 0.25rem;
-  margin: 0 1px;
-  border-radius: 0.5rem;
-  font-weight: 600;
+.pj-back {
+  @include nav-title();
+}
+
+//TODO
+.todo {
+  &-screenshot-container {
+    height: 30rem;
+    margin: 3rem auto;
+  }
+
+  &-mobile {
+    display: inline-block;
+    width: 20rem;
+    border-radius: 1rem;
+    // margin: 1.5rem 1rem;
+  }
+
+  &-dark {
+    position: relative;
+    left: -7rem;
+    top: 5rem;
+  }
 }
