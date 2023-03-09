@@ -1,5 +1,6 @@
 import { GoMarkGithub } from "react-icons/go";
 import { FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { SiQiita } from "react-icons/si";
 
 const Footer = () => {
   return (
@@ -21,6 +22,13 @@ const Footer = () => {
         rel="noopener noreferrer"
       >
         <FaLinkedin className="footer-icon" />
+      </a>
+      <a
+        href="https://qiita.com/lily28"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <SiQiita className="footer-icon" />
       </a>
     </section>
   );

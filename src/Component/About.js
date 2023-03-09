@@ -66,7 +66,7 @@ const About = () => {
           <div className="about-skill-row">
             <span className="about-skill-title">Others</span>
             <div className="about-skill-others-text">
-              <p>Other skills ... TypeScript, MongoDBに興味があり勉強中です</p>
+              <p>Other skills ... TypeScriptとAstro.jsが気になっています</p>
               <p>Hobbies ... ゲーム / 猫吸い / 読書</p>
             </div>
           </div>
@@ -75,7 +75,7 @@ const About = () => {
 
       <div className="about-intro">
         <p className="margin-bottom">
-          　中学生の頃に、簡単なものではありますがWebサイトを作ることが趣味だったのですが、昨年、フロントエンドエンジニアの方の記事を拝見したことをきっかけに、今後のキャリアとしてウェブ開発へ深く興味を持ちました。現在独学で学習しており、ポジションを探しております。
+          　昨年、未経験フロントエンドエンジニアの方の記事を拝見したことをきっかけに、開発へ深く興味を持ちました。元々中学生の頃に簡単なWebサイトを作成することが趣味だったのですが、独学で学習を開始したところ魅力にはまり現在就職活動を行なっています。
         </p>
         <p className="margin-bottom">
           　難しい問題が沢山あるぶん、新しい技術を学んだり、エラーを解決できた瞬間がとても楽しく感じています。コンサルティング営業としての経験からプロジェクトを通じてどんな課題が解決できるか、またはすべきか、デザインは見やすく使いやすいものかを意識しながら開発することを心がけています。
