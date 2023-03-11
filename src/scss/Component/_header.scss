@@ -4,7 +4,9 @@
   padding-top: 30vh;
   text-align: center;
 
-  //background-color: yellow;
+  @include respond(phone) {
+    padding-top: 20vh;
+  }
 }
 
 .header {

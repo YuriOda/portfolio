@@ -5,6 +5,10 @@
 
   font-size: 1.25rem;
   font-family: $font-basic;
+
+  @include respond(phone) {
+    border-left: none;
+  }
 }
 
 .about {

@@ -4,6 +4,10 @@
 
   font-family: $font-basic;
   font-size: 1.25rem;
+
+  @include respond(phone) {
+    border-left: none;
+  }
 }
 
 //PJ item

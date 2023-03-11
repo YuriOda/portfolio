@@ -5,4 +5,8 @@
   left: -7.5rem;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
+
+  @include respond(phone) {
+    display: none;
+  }
 }
