@@ -55,10 +55,16 @@
     padding: 0.5rem 1rem;
     background-color: inherit;
     cursor: pointer;
+    color: $color-primary;
 
     &:hover {
       background-color: $color-secondary;
       color: white;
+    }
+
+    &:link,
+    &:visited {
+      color: $color-primary;
     }
 
     &-todo {
