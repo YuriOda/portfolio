@@ -22,6 +22,10 @@
     font-family: $font-title;
     color: $color-grey-dark;
     letter-spacing: 3.5px;
+
+    @include respond(phone) {
+      font-size: 4rem;
+    }
   }
 }
 
