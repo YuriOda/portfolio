@@ -118,6 +118,10 @@
     padding: 1rem;
 
     line-height: 1.75;
+
+    @include respond(phone) {
+      width: 90vw;
+    }
   }
 }
 
