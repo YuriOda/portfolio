@@ -29,7 +29,7 @@ const NavigationSmall = () => {
   }, []);
 
   return (
-    <div className="navigation">
+    <div className="navigation" style={{ width: menuShown ? "100%" : "0" }}>
       <div className="navigation__button" onClick={showMenuHandler}>
         <span className="navigation__icon">&nbsp;</span>
       </div>
