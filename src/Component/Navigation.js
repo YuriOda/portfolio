@@ -28,10 +28,20 @@ const Navigation = () => {
                 </Scroll>
               </li>
               <li className="nav-right__item">
+                <a
+                  href="https://lily2028.hatenablog.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Memo
+                </a>
+              </li>
+              <li className="nav-right__item">
                 <Scroll to="top" smooth={true} duration={500}>
                   Home
                 </Scroll>
               </li>
+
               <li className="nav-right__svg">
                 <a href="mailto: yuri.oda.lily@gmail.com">
                   <SvgEnvelop />
