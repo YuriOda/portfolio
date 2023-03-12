@@ -18,6 +18,10 @@
     font-family: $font-basic;
     color: $color-grey-dark;
     letter-spacing: 2px;
+
+    //animation
+    animation: titleAppear 0.5s ease-out 0.5s;
+    animation-fill-mode: backwards;
   }
 
   &__title {
@@ -50,6 +54,10 @@
 .highlight {
   transition: all 0.3s ease-out;
   padding: 0 0.5rem;
+
+  //animation
+  animation: titleAppear 1s ease-out 1s;
+  animation-fill-mode: backwards;
 }
 
 .highlight:hover {
