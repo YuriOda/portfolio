@@ -66,7 +66,10 @@ const About = () => {
           <div className="about-skill-row">
             <span className="about-skill-title">Others</span>
             <div className="about-skill-others-text">
-              <p>Other skills ... TypeScriptとAstro.jsが気になっています</p>
+              <p>
+                Next.js学習中 / TypeScript,
+                Astro.jsなども習得したいと考えています
+              </p>
               <p>Hobbies ... ゲーム / 猫吸い / 読書</p>
             </div>
           </div>

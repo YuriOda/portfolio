@@ -1,15 +1,14 @@
 import Header from "../Component/Header";
-import Project from "../Component/Project";
+//import Project from "../Component/Project";
+import Projectv2 from "../Component/Projectv2";
 import About from "../Component/About";
-//import Contact from "../Component/Contact";
 
 const Home = () => {
   return (
     <>
       <Header />
-      <Project />
+      <Projectv2 />
       <About />
-      {/* <Contact /> */}
     </>
   );
 };

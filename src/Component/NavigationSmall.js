@@ -4,6 +4,7 @@ import { Link as Scroll } from "react-scroll";
 //Icon
 import { GoMarkGithub } from "react-icons/go";
 import { FaEnvelope, FaLinkedin } from "react-icons/fa";
+import { SiQiita } from "react-icons/si";
 import Logo from "../assets/logo.png";
 
 const NavigationSmall = () => {
@@ -13,7 +14,6 @@ const NavigationSmall = () => {
     setMenuShown((prev) => !prev);
   };
 
-  //ボタン以外をクリックしたときにメニューを閉じる
   useEffect(() => {
     const onCloseMenuHandler = (e) => {
       if (
@@ -100,6 +100,13 @@ const NavigationSmall = () => {
                 rel="noopener noreferrer"
               >
                 <FaLinkedin className="nav__links-icon" />
+              </a>
+              <a
+                href="https://qiita.com/lily28"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <SiQiita className="nav__links-icon" />
               </a>
             </div>
           </nav>

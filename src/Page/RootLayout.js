@@ -14,10 +14,10 @@ const RootLayout = () => {
     <>
       {!isPhone && <Navigation />}
       {isPhone && <NavigationSmall />}
-      <div className="main-wrapper">
-        <Outlet />
-        <Footer />
-      </div>
+      {/* <div className="main-wrapper"> */}
+      <Outlet />
+      <Footer />
+      {/* </div> */}
     </>
   );
 };

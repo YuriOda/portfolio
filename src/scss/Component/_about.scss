@@ -1,20 +1,18 @@
 #about {
-  margin-top: 15rem;
-  //padding-top: 10rem;
   border-left: 1px solid $color-title;
-
   font-size: 1.25rem;
   font-family: $font-basic;
 
   @include respond(phone) {
     border-left: none;
+    padding-top: 5rem;
   }
 }
 
 .about {
   &-summary {
     position: relative;
-    top: -17.5rem;
+    //top: -17.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -37,6 +35,10 @@
     &-row {
       display: flex;
       margin: 1rem 0;
+
+      @include respond(phone) {
+        margin-left: 3rem;
+      }
     }
 
     &-title {
@@ -45,6 +47,10 @@
       background-color: white;
       border-right: 1px solid $color-title;
       padding-top: 3.25rem;
+
+      @include respond(phone) {
+        display: none;
+      }
     }
 
     &-table {
@@ -110,7 +116,7 @@
 
   &-intro {
     position: relative;
-    top: -13rem;
+    //top: -13rem;
     width: 70vw;
     max-width: 70rem;
     margin: 0 auto;
@@ -121,6 +127,7 @@
 
     @include respond(phone) {
       width: 100%;
+      padding: 0 5rem;
     }
   }
 }
