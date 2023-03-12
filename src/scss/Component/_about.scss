@@ -12,11 +12,9 @@
 .about {
   &-summary {
     position: relative;
-    //top: -17.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
     align-items: center;
   }
 
@@ -27,18 +25,17 @@
   }
 
   &-skills {
-    // padding: 1.5rem;
     width: 47.5rem;
+
+    @include respond(phone) {
+      margin-left: 3rem;
+    }
   }
 
   &-skill {
     &-row {
       display: flex;
       margin: 1rem 0;
-
-      @include respond(phone) {
-        margin-left: 3rem;
-      }
     }
 
     &-title {
@@ -116,18 +113,15 @@
 
   &-intro {
     position: relative;
-    //top: -13rem;
     width: 70vw;
     max-width: 70rem;
     margin: 0 auto;
-    color: $color-grey-dark;
     padding: 1rem;
 
     line-height: 1.75;
 
     @include respond(phone) {
-      width: 100%;
-      padding: 0 5rem;
+      width: 85vw;
     }
   }
 }
