@@ -28,13 +28,6 @@ const Header = () => {
         >
           <FaLinkedin className="header-icon" />
         </a>
-        <a
-          href="https://qiita.com/lily28"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SiQiita className="header-icon" />
-        </a>
       </div>
     </section>
   );
