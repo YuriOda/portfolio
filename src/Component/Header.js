@@ -1,13 +1,12 @@
 import { GoMarkGithub } from "react-icons/go";
 import { FaEnvelope, FaLinkedin } from "react-icons/fa";
-import { SiQiita } from "react-icons/si";
 
 const Header = () => {
   return (
     <section className="header-section" id="top">
       <span className="header__subtitle">Hi, I'm Yuri</span>
       <h1 className="header__title">
-        <span className="highlight">Frontend / React Developer</span>
+        <span className="highlight">Frontend Developer</span>
       </h1>
 
       <div className="header-icon-div">
