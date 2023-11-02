@@ -110,20 +110,6 @@
   &-skill-others-text {
     padding: 1.5rem 1rem;
   }
-
-  &-intro {
-    position: relative;
-    width: 70vw;
-    max-width: 70rem;
-    margin: 0 auto;
-    padding: 1rem;
-
-    line-height: 1.75;
-
-    @include respond(phone) {
-      width: 85vw;
-    }
-  }
 }
 
 .margin-bottom {
