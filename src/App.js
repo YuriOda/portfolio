@@ -4,7 +4,6 @@ import Home from "./page/Home";
 import RootLayout from "./RootLayout";
 import PJToDo from "./page/PJToDo";
 import PJYomuLog from "./page/PJYomuLog";
-//import Test from "./page/Test";
 
 //style
 import "./App.css";
