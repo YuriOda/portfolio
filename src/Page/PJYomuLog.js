@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { FaGlobe, FaGithub, FaSass, FaReact, FaFigma } from "react-icons/fa";
 import { SiFirebase } from "react-icons/si";
 
-import Footer from "../Component/Footer";
+import Footer from "../component/Footer";
 import ScreenShot from "../assets/yomu-log.png";
 import Design from "../assets/yomu-log-design.png";
 

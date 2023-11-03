@@ -1,10 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 //pages
-import RootLayout from "./Page/RootLayout";
-import Home from "./Page/Home";
-import PJToDo from "./Page/PJToDo";
-import PJYomuLog from "./Page/PJYomuLog";
-//import Test from "./Page/Test";
+import RootLayout from "./page/RootLayout";
+import Home from "./page/Home";
+import PJToDo from "./page/PJToDo";
+import PJYomuLog from "./page/PJYomuLog";
+//import Test from "./page/Test";
 
 //style
 import "./App.css";

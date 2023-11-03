@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { FaGlobe, FaGithub, FaSass, FaReact, FaFigma } from "react-icons/fa";
 import { SiFirebase } from "react-icons/si";
 
-import Footer from "../Component/Footer";
+import Footer from "../component/Footer";
 import ScreenShotMobileLight from "../assets/todo-mobile-light.png";
 import ScreenShotMobileDark from "../assets/todo-mobile-dark.png";
 import Gif from "../assets/todo-gif.gif";

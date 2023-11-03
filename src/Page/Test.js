@@ -1,5 +1,5 @@
-import NavigationSmall from "../Component/NavigationSmall";
-import Header from "../Component/Header";
+import NavigationSmall from "../component/NavigationSmall";
+import Header from "../component/Header";
 
 const Test = () => {
   return (
