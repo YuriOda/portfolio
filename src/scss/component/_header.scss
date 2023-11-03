@@ -1,0 +1,87 @@
+.header-section {
+  background-color: $background-color;
+  height: 70vh;
+  padding-top: 30vh;
+  text-align: center;
+
+  @include respond(phone) {
+    padding-top: 20vh;
+  }
+}
+
+.header {
+  &__subtitle {
+    font-size: 3rem;
+    font-family: $font-basic;
+    color: $color-grey-dark;
+    letter-spacing: 2px;
+
+    //animation
+    animation: titleAppear 0.5s ease-out 0.5s;
+    animation-fill-mode: backwards;
+  }
+
+  &__title {
+    font-size: 5.5rem;
+    font-family: $font-title;
+    color: $color-grey-dark;
+    letter-spacing: 3.5px;
+
+    animation: titleAppear 0.5s ease-out 1s;
+    animation-fill-mode: backwards;
+
+    @include respond(phone) {
+      font-size: 4rem;
+    }
+  }
+}
+
+.header-icon {
+  &-div {
+    margin-top: 5rem;
+  }
+
+  font-size: 2rem;
+  color: $color-primary;
+  margin: 0 1rem;
+
+  &:hover {
+    color: $color-secondary;
+    transform: translateY(0.25rem);
+  }
+}
+
+.highlight {
+  padding: 0 0.5rem;
+  animation: AnimationTitle 3s ease infinite;
+  background: linear-gradient(
+    to right,
+    $color-primary,
+    $color-secondary,
+    $color-tertiary
+  );
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  position: relative;
+  top: 0;
+  transition: top 0.2s ease-out;
+
+  &:hover {
+    top: 0.3rem;
+  }
+
+  @keyframes AnimationTitle {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}

@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 
-import Navigation from "../component/Navigation";
-import NavigationSmall from "../component/NavigationSmall";
-import Footer from "../component/Footer";
+import Navigation from "./component/Navigation";
+import NavigationSmall from "./component/NavigationSmall";
+import Footer from "./component/Footer";
 
 const RootLayout = () => {
   const isPhone = useMediaQuery({
