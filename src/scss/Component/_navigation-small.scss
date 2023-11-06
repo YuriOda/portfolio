@@ -21,9 +21,9 @@
   &__nav {
     background-color: #fff;
     height: 50vh;
-    position: fixed;
-    top: 0;
-    right: -200rem;
+    // position: fixed;
+    // top: 0;
+    // right: -200rem;
     z-index: 1500;
 
     opacity: 0;
@@ -107,8 +107,14 @@
   height: 100vh;
   background-color: rgba(#fff, 0.95);
 
-  position: absolute;
-  right: 0;
+  position: fixed;
+  right: -120%;
+  top: 0;
+
+  &__show {
+    transition: all 0.4s;
+    right: 0;
+  }
 
   border-left: 1px solid rgba($color-grey-dark, 0.7);
 

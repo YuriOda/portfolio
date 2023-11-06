@@ -29,89 +29,89 @@ const NavigationSmall = () => {
   }, []);
 
   return (
-    <div className="navigation" style={{ width: menuShown ? "100%" : "0" }}>
+    <div className={`navigation`} style={{ width: menuShown ? "100%" : "0" }}>
       <div className="navigation__button" onClick={showMenuHandler}>
         <span className="navigation__icon">&nbsp;</span>
       </div>
 
-      {menuShown && (
-        <>
-          <nav className="nav">
-            <img src={Logo} alt="Logo Img" className="nav__logo" />
-            <ul className="nav__list">
-              <li className="nav__item">
-                <Scroll
-                  to="project"
-                  smooth={true}
-                  duration={500}
-                  offset={-80}
-                  onClick={showMenuHandler}
-                >
-                  Projects
-                </Scroll>
-              </li>
-              <li className="nav__item">
-                <Scroll
-                  to="about"
-                  smooth={true}
-                  duration={500}
-                  offset={-80}
-                  onClick={showMenuHandler}
-                >
-                  About
-                </Scroll>
-              </li>
+      {/* {menuShown && ( */}
+      <>
+        <nav className={`nav ${menuShown && "nav__show"}`}>
+          <img src={Logo} alt="Logo Img" className="nav__logo" />
+          <ul className="nav__list">
+            <li className="nav__item">
+              <Scroll
+                to="project"
+                smooth={true}
+                duration={500}
+                offset={-80}
+                onClick={showMenuHandler}
+              >
+                Projects
+              </Scroll>
+            </li>
+            <li className="nav__item">
+              <Scroll
+                to="about"
+                smooth={true}
+                duration={500}
+                offset={-80}
+                onClick={showMenuHandler}
+              >
+                About
+              </Scroll>
+            </li>
 
-              <li className="nav__item">
-                <a
-                  href="https://lily2028.hatenablog.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Memo
-                </a>
-              </li>
-              <li className="nav__item">
-                <Scroll
-                  to="top"
-                  smooth={true}
-                  duration={500}
-                  offset={-80}
-                  onClick={showMenuHandler}
-                >
-                  Home
-                </Scroll>
-              </li>
-            </ul>
-            <div className="nav__links">
+            <li className="nav__item">
               <a
-                href="https://github.com/YuriOda"
+                href="https://lily2028.hatenablog.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <GoMarkGithub className="nav__links-icon" />
+                Memo
               </a>
-              <a href="mailto: yuri.oda.lily@gmail.com">
-                <FaEnvelope className="nav__links-icon" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/yuri-oda/"
-                target="_blank"
-                rel="noopener noreferrer"
+            </li>
+            <li className="nav__item">
+              <Scroll
+                to="top"
+                smooth={true}
+                duration={500}
+                offset={-80}
+                onClick={showMenuHandler}
               >
-                <FaLinkedin className="nav__links-icon" />
-              </a>
-              <a
-                href="https://qiita.com/lily28"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <SiQiita className="nav__links-icon" />
-              </a>
-            </div>
-          </nav>
-        </>
-      )}
+                Home
+              </Scroll>
+            </li>
+          </ul>
+          <div className="nav__links">
+            <a
+              href="https://github.com/YuriOda"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GoMarkGithub className="nav__links-icon" />
+            </a>
+            <a href="mailto: yuri.oda.lily@gmail.com">
+              <FaEnvelope className="nav__links-icon" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/yuri-oda/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="nav__links-icon" />
+            </a>
+            <a
+              href="https://qiita.com/lily28"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SiQiita className="nav__links-icon" />
+            </a>
+          </div>
+        </nav>
+      </>
+      {/* )} */}
     </div>
   );
 };
