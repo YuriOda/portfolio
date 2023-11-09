@@ -51,7 +51,9 @@ const About = () => {
             <div className="about-skill-language">
               <div>
                 <span className="about-skill-language-title">English</span>
-                <span className="about-skill-language-toeic">TOEIC910</span>
+                <span className="about-skill-language-toeic">
+                  CEFR B2 / TOEIC910
+                </span>
               </div>
               <div>
                 <span className="about-skill-language-title">Japanese</span>
